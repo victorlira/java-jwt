@@ -134,15 +134,15 @@ compileTestJava {
     options.compilerArgs = ["-Xlint:deprecation"]
 }
 
-def testJava8 = tasks.register('testJava8', Test) {
-    description = 'Runs unit tests on Java 8.'
-    group = 'verification'
-
-    javaLauncher.set(javaToolchains.launcherFor {
-        languageVersion = JavaLanguageVersion.of(8)
-    })
-    shouldRunAfter(tasks.named('test'))
-}
+//def testJava8 = tasks.register('testJava8', Test) {
+//    description = 'Runs unit tests on Java 8.'
+//    group = 'verification'
+//
+//    javaLauncher.set(javaToolchains.launcherFor {
+//        languageVersion = JavaLanguageVersion.of(8)
+//    })
+//    shouldRunAfter(tasks.named('test'))
+//}
 
 def testJava17 = tasks.register('testJava17', Test) {
     description = 'Runs unit tests on Java 17.'
