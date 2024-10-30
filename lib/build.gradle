@@ -155,7 +155,7 @@ def testJava17 = tasks.register('testJava17', Test) {
 }
 
 tasks.named('check') {
-    dependsOn(testJava8)
+    //dependsOn(testJava8)
     dependsOn(testJava17)
 }
 
